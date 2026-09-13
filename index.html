@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Dump Services | Professional Junk Removal Services</title>
+    <meta name="description" content="Smart Dump Services provides professional junk removal, furniture removal, construction debris removal, residential and commercial clean-up services in San Diego, South Bay, and East County.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Smart Dump Services | Professional Junk Removal">
+    <meta property="og:description" content="Professional junk removal services for residential, commercial, furniture, construction debris and more.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ==========================================
+         CSS STYLES
+         ========================================== -->
+    <style>
+        /* ==========================================================================
+           VARIABLES & SETUP
+           ========================================================================== */
+        :root {
+            --black: #050505;
+            --dark-black: #0A0A0A;
+            --dark-gray: #161616;
+            --gold: #D4A72C;
+            --bright-gold: #F5C542;
+            --white: #FFFFFF;
+            --light-gray: #BDBDBD;
+            --font-main: 'Poppins', sans-serif;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--black);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            padding-bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-padding {
+            padding: 80px 0; 
+        }
+
+        .dark-bg {
+            background-color: var(--dark-black);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-4 { margin-top: 2rem; }
+        .mb-4 { margin-bottom: 2rem; }
+
+        /* ==========================================================================
+           TYPOGRAPHY
+           ========================================================================== */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.2rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+
+        .section-heading {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            text-transform: uppercase;
+        }
+
+        .section-subheading {
+            color: var(--light-gray);
+            font-weight: 400;
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: var(--light-gray);
+            margin-bottom: 1rem;
+        }
+
+        .gold-accent-line {
+            width: 80px;
+            height: 4px;
+            background-color: var(--gold);
+            margin-bottom: 2rem;
+            border-radius: 2px;
+        }
+
+        .center-line {
+            margin: 0 auto 2rem auto;
+        }
+
+        /* ==========================================================================
+           BUTTONS
+           ========================================================================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--gold);
+            color: var(--black);
+            border-color: var(--gold);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--bright-gold);
+            border-color: var(--bright-gold);
+            box-shadow: 0 5px 20px rgba(212, 167, 44, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border-color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--black);
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--gold);
+            border-color: var(--gold);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--gold);
+            color: var(--black);
+            transform: translateY(-3px);
+        }
+
+        .btn-whatsapp-alt {
+            background-color: #25D366;
+            color: var(--white);
+            border-color: #25D366;
+        }
+        .btn-whatsapp-alt:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .full-width {
+            width: 100%;
+        }
+
+        /* ==========================================================================
+           PRELOADER
+           ========================================================================== */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--black);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease;
+        }
+
+        .preloader-logo {
+            max-width: 250px;
+            margin-bottom: 1.5rem;
+        }
+
+        .preloader-text {
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .loading-line {
+            width: 200px;
+            height: 2px;
+            background: rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .loading-line::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background-color: var(--gold);
+            animation: loadLine 1.5s infinite ease-in-out;
+        }
+
+        @keyframes loadLine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(200%); }
+        }
+
+        /* ==========================================================================
+           HEADER & NAVIGATION
+           ========================================================================== */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition);
+            background: linear-gradient(to bottom, rgba(5,5,5,0.9), transparent);
+        }
+
+        header.scrolled {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(212, 167, 44, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-link .logo {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .desktop-nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: var(--gold);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .hamburger .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: var(--white);
+            transition: var(--transition);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--dark-black);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            left: 0;
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .mobile-nav-links a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* Hamburger Animation */
+        .hamburger.active .bar:nth-child(2) { opacity: 0; }
+        .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); background-color: var(--gold); }
+        .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); background-color: var(--gold); }
+
+        /* ==========================================================================
+           HERO SECTION
+           ========================================================================== */
+        #hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            position: relative;
+            padding-top: 100px;
+            background: radial-gradient(circle at center, rgba(5, 5, 5, 0.85) 0%, rgba(5, 5, 5, 0.6) 60%, rgba(5, 5, 5, 0.3) 100%), url('https://res.cloudinary.com/q4dr1ixy/image/upload/v1789313452/home.png') center/cover no-repeat;
+        }
+
+        .hero-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            width: 100%;
+            text-align: center; 
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 900px; 
+            width: 100%;
+        }
+
+        .hero-content h1 {
+            text-shadow: 2px 4px 12px rgba(0,0,0,0.8);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            text-shadow: 1px 2px 8px rgba(0,0,0,0.8);
+            color: #EEEEEE;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .eyebrow {
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: inline-block; 
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.2rem;
+            margin-bottom: 2.5rem;
+            justify-content: center; 
+            flex-wrap: wrap;
+        }
+
+        .hero-trust {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 1.5rem;
+            max-width: 400px;
+            margin: 0 auto; 
+        }
+
+        .phone-number {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 2px 5px rgba(0,0,0,0.8);
+        }
+
+        .trust-line {
+            font-size: 0.9rem;
+            color: var(--gold);
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        /* ==========================================================================
+           QUICK CONTACT / TRUST BAR
+           ========================================================================== */
+        #trust-bar {
+            background-color: var(--gold);
+            color: var(--black);
+            padding: 1.5rem 0;
+            overflow: hidden; 
+        }
+
+        .trust-bar-track {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+            justify-content: center; 
+        }
+
+        .trust-item i {
+            font-size: 2rem;
+            color: var(--black);
+        }
+
+        .trust-label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .trust-value {
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .trust-item:hover {
+            transform: scale(1.02);
+        }
+
+        .mobile-duplicate {
+            display: none !important;
+        }
+
+        /* ==========================================================================
+           ABOUT SECTION
+           ========================================================================== */
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem; 
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(212, 167, 44, 0.2);
+            overflow: hidden;
+            width: 100%;
+            height: 380px; 
+        }
+
+        .about-real-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+        }
+
+        /* ==========================================================================
+           SERVICES SECTION & VIEW ALL BOX
+           ========================================================================== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background-color: var(--dark-gray);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            border-top: 3px solid var(--gold);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(212, 167, 44, 0.05);
+            border-top-color: var(--bright-gold);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+        }
+
+        .view-all-box {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--bright-gold) 100%);
+            color: var(--black);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            box-shadow: 0 10px 30px rgba(212, 167, 44, 0.2);
+        }
+
+        .view-all-box h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--black);
+            text-transform: uppercase;
+        }
+
+        .view-all-box p {
+            color: var(--dark-black);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .view-all-box .btn {
+            background-color: var(--black);
+            color: var(--gold);
+            border-color: var(--black);
+        }
+
+        .view-all-box .btn:hover {
+            background-color: transparent;
+            color: var(--black);
+            border-color: var(--black);
+        }
+
+        /* ==========================================================================
+           WHY CHOOSE US
+           ========================================================================== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--dark-gray);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: var(--transition);
+            overflow: hidden;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(212, 167, 44, 0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transform: translateY(-5px);
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1);
+        }
+
+        /* ==========================================================================
+           HOW IT WORKS & SERVICE AREAS
+           ========================================================================== */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            background-color: var(--dark-gray);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.05);
+            border-top: 3px solid var(--gold);
+            text-align: left; 
+            transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .step:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 15px 40px rgba(212, 167, 44, 0.15);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1.2rem;
+        }
+
+        .step-circle {
+            width: 55px;
+            height: 55px;
+            background-color: var(--gold);
+            color: var(--black);
+            border-radius: 8px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            box-shadow: 0 5px 15px rgba(212, 167, 44, 0.3);
+            flex-shrink: 0;
+        }
+
+        .step h3 {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            line-height: 1.3;
+        }
+
+        .step p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .service-area-card {
+            background-color: var(--dark-gray);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.05);
+            text-align: center;
+        }
+
+        .service-area-card h3 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        /* ==========================================================================
+           SAME DAY & FINAL CTA
+           ========================================================================== */
+        #same-day {
+            background-color: var(--gold);
+            color: var(--black);
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        #same-day h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-transform: uppercase;
+            color: var(--black);
+            margin-bottom: 1rem;
+        }
+
+        #same-day p {
+            color: var(--dark-black);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        #final-cta {
+            background: linear-gradient(rgba(5,5,5,0.8), rgba(5,5,5,0.9)), url('assets/services.png') center/cover;
+            background-color: var(--black); 
+            border-top: 2px solid var(--gold);
+            border-bottom: 2px solid var(--gold);
+        }
+
+        #final-cta h2 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            text-transform: uppercase;
+        }
+
+        #final-cta p {
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* ==========================================================================
+           FOOTER
+           ========================================================================== */
+        footer {
+            background-color: var(--dark-black);
+            padding-top: 80px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            max-width: 220px;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .footer-desc {
+            font-size: 0.9rem;
+        }
+
+        footer h4 {
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--light-gray);
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            background-color: #000000;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* ==========================================================================
+           FLOATING BUTTONS & MOBILE BAR
+           ========================================================================== */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 990;
+        }
+
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: var(--transition);
+        }
+
+        .float-wa {
+            background-color: #25D366;
+        }
+        .float-wa:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+
+        .float-call {
+            background-color: var(--gold);
+            color: var(--black);
+        }
+        .float-call:hover {
+            background-color: var(--bright-gold);
+            transform: scale(1.1);
+        }
+
+        .mobile-bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--dark-black);
+            display: none;
+            justify-content: space-between;
+            z-index: 1000;
+            border-top: 1px solid rgba(212, 167, 44, 0.2);
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+        }
+
+        .mobile-action-btn {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 5px;
+            gap: 5px;
+            color: var(--white);
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-right: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .mobile-action-btn:last-child {
+            border-right: none;
+        }
+
+        .mobile-action-btn i {
+            font-size: 1.2rem;
+        }
+
+        .mobile-action-btn.wa-btn {
+            color: #25D366;
+        }
+
+        .mobile-action-btn.quote-btn {
+            color: var(--gold);
+        }
+
+        /* BACK TO TOP */
+        #back-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--dark-gray);
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            z-index: 990;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        #back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #back-to-top:hover {
+            background-color: var(--gold);
+            color: var(--black);
+        }
+
+        /* ==========================================================================
+           ANIMATIONS / REVEAL
+           ========================================================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-right {
+            transform: translateX(30px);
+        }
+
+        .fade-right.active {
+            transform: translateX(0);
+        }
+
+        /* ==========================================================================
+           RESPONSIVE DESIGN
+           ========================================================================== */
+
+        @media (max-width: 1199px) {
+            h1 { font-size: 3rem; }
+            .hero-container, .about-container { gap: 2rem; }
+            .trust-bar-track { grid-template-columns: repeat(2, 1fr); }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .steps-container { grid-template-columns: repeat(2, 1fr); }
+            .footer-container { grid-template-columns: 1fr 1fr; }
+            .about-image { height: 320px; }
+        }
+
+        @media (max-width: 991px) {
+            .desktop-nav { display: none; }
+            .hamburger { display: block; }
+            
+            .hero-container, .about-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .about-image { height: 350px; margin-top: 2rem; }
+
+            #hero {
+                background: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85)), url('im.jpeg') center/cover no-repeat;
+            }
+            .hero-content { padding-top: 2rem; margin: 0 auto; padding-right: 0; }
+            
+            .about-text { text-align: center; }
+            .about-text .gold-accent-line { margin: 0 auto 2rem auto; }
+        }
+
+        @media (max-width: 767px) {
+            body { padding-bottom: 60px; }
+            .section-padding { padding: 60px 0; }
+            
+            /* --- MOBILE SLIDING MARQUEE FOR TRUST BAR --- */
+            #trust-bar .container {
+                width: 100%; 
+                max-width: 100%;
+            }
+            .marquee-wrapper {
+                overflow: hidden;
+                width: 100%;
+            }
+            .trust-bar-track {
+                display: flex;
+                width: max-content;
+                animation: marqueeSlide 15s linear infinite;
+            }
+            .trust-bar-track:active {
+                animation-play-state: paused;
+            }
+            .trust-item {
+                width: 180px; 
+                flex-shrink: 0;
+                flex-direction: column; 
+                text-align: center;
+                justify-content: center;
+                margin: 0 10px; 
+                padding: 10px;
+            }
+            .trust-item i { 
+                margin-bottom: 5px; 
+                font-size: 1.8rem;
+            }
+            .mobile-duplicate {
+                display: flex !important;
+            }
+            @keyframes marqueeSlide {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); } 
+            }
+
+            .services-grid, .features-grid, .steps-container { grid-template-columns: 1fr; }
+            
+            .service-card {
+                text-align: center;
+                padding: 2rem 1.5rem;
+            }
+            .service-icon {
+                display: flex;
+                justify-content: center;
+            }
+
+            .step {
+                text-align: center;
+                padding: 2rem 1.5rem;
+            }
+            .step-header {
+                flex-direction: column; 
+                justify-content: center;
+                gap: 10px;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            .step-circle {
+                margin: 0 auto; 
+            }
+
+            .footer-container { 
+                grid-template-columns: 1fr; 
+                text-align: center; 
+            }
+            .footer-logo { 
+                margin: 0 auto 1.5rem auto; 
+            }
+            .footer-links a { 
+                justify-content: center; 
+            }
+            
+            .desktop-only { display: none; }
+            .mobile-bottom-bar { display: flex; }
+            #back-to-top { bottom: 80px; left: 20px; }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2.2rem; }
+            .section-heading { font-size: 1.8rem; }
+            .hero-buttons .btn { width: 100%; }
+            .cta-buttons .btn { width: 100%; }
+            .about-image { height: 250px; }
+            .trust-item { width: 150px; } 
+            .trust-label { font-size: 0.7rem; }
+            .trust-value { font-size: 0.85rem; }
+            .trust-item i { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <img src="logo.png" alt="Smart Dump Services Logo" class="preloader-logo" onerror="this.src='https://placehold.co/200x80/050505/D4A72C?text=SMART+DUMP+SERVICES'">
+        <h2 class="preloader-text">SMART DUMP SERVICES</h2>
+        <div class="loading-line"></div>
+        <p>LOADING...</p>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="/" class="logo-link" aria-label="Home">
+                <img src="logo.png" alt="Smart Dump Services Logo" class="logo" onerror="this.src='https://placehold.co/150x50/050505/D4A72C?text=LOGO'">
+            </a>
+            
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary nav-btn">GET A FREE QUOTE</a>
+            </nav>
+
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary mobile-nav-btn">GET A FREE QUOTE</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <span class="eyebrow">SMART DUMP SERVICES</span>
+                <h1>JUNK REMOVAL MADE SIMPLE.</h1>
+                <p>Fast, reliable junk removal for homes, businesses, furniture, construction debris and more.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">GET A FREE QUOTE</a>
+                    <a href="tel:+16199329981" class="btn btn-secondary">
+                        <i class="fa-solid fa-phone"></i> CALL US
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <span class="phone-number">(619) 932-9981</span>
+                    <div class="trust-line">FAST &bull; PROFESSIONAL &bull; RELIABLE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK CONTACT / TRUST BAR -->
+    <div id="trust-bar">
+        <div class="container"> 
+            <div class="marquee-wrapper">
+                <div class="trust-bar-track">
+                    
+                    <!-- THE ORIGINAL 4 ITEMS -->
+                    <a href="tel:+16199329981" class="trust-item">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div>
+                            <span class="trust-label">CALL US</span>
+                            <span class="trust-value">(619) 932-9981</span>
+                        </div>
+                    </a>
+                    <a href="mailto:smartdumpserv@gmail.com" class="trust-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span class="trust-label">EMAIL US</span>
+                            <span class="trust-value">smartdumpserv@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/16199329981?text=Hi%20Smart%20Dump%20Services%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="trust-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <span class="trust-label">WHATSAPP</span>
+                            <span class="trust-value">Chat With Us</span>
+                        </div>
+                    </a>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <span class="trust-label">HOURS</span>
+                            <span class="trust-value">Mon–Sun, 7 AM–9 PM</span>
+                        </div>
+                    </div>
+
+                    <!-- DUPLICATED ITEMS (For infinite loop effect on mobile) -->
+                    <a href="tel:+16199329981" class="trust-item mobile-duplicate">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div>
+                            <span class="trust-label">CALL US</span>
+                            <span class="trust-value">(619) 932-9981</span>
+                        </div>
+                    </a>
+                    <a href="mailto:smartdumpserv@gmail.com" class="trust-item mobile-duplicate">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span class="trust-label">EMAIL US</span>
+                            <span class="trust-value">smartdumpserv@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/16199329981?text=Hi%20Smart%20Dump%20Services%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="trust-item mobile-duplicate">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <span class="trust-label">WHATSAPP</span>
+                            <span class="trust-value">Chat With Us</span>
+                        </div>
+                    </a>
+                    <div class="trust-item mobile-duplicate">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <span class="trust-label">HOURS</span>
+                            <span class="trust-value">Mon–Sun, 7 AM–9 PM</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="section-padding">
+        <div class="container about-container">
+            <div class="about-text reveal">
+                <h2 class="section-heading">ABOUT SMART DUMP SERVICES</h2>
+                <h3 class="section-subheading">"Results Without the Stress."</h3>
+                <div class="gold-accent-line"></div>
+                
+                <p>Created by Alexander and Raul, Smart Dump Services was built to provide reliable, straightforward, and customer-focused junk removal services.</p>
+                <p>We believe our clients deserve an easy alternative to clear their properties and homes without the need to go through stress or misunderstandings.</p>
+                
+                <a href="about.html" class="btn btn-outline mt-4">LEARN MORE</a>
+            </div>
+            <div class="about-image reveal fade-right">
+                <img src="https://res.cloudinary.com/q4dr1ixy/image/upload/v1789313612/WhatsApp_Image_2026-09-13_at_9.03.09_PM.jpg" alt="Smart Dump Services in action" class="about-real-image" onerror="this.src='https://placehold.co/600x400/161616/D4A72C?text=Smart+Dump+Services'">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES PREVIEW SECTION -->
+    <section class="section-padding dark-bg">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-heading text-center">OUR SERVICES</h2>
+                <p class="section-subheading text-center">"Professional removal solutions for homes, businesses and construction projects."</p>
+                <div class="gold-accent-line center-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-trash-can"></i></div>
+                    <h3>JUNK REMOVAL</h3>
+                    <p>Fast and reliable removal of unwanted junk, clutter, and household items. We do the heavy lifting so you don’t have to.</p>
+                    <a href="services.html" class="btn btn-outline">LEARN MORE</a>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 100ms;">
+                    <div class="service-icon"><i class="fa-solid fa-couch"></i></div>
+                    <h3>FURNITURE REMOVAL</h3>
+                    <p>Removal of old couches, mattresses, tables, dressers and other unwanted furniture.</p>
+                    <a href="/services.html" class="btn btn-outline">LEARN MORE</a>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 200ms;">
+                    <div class="service-icon"><i class="fa-solid fa-hammer"></i></div>
+                    <h3>CONSTRUCTION DEBRIS</h3>
+                    <p>Removal of construction and renovation debris, including wood, drywall, flooring, scrap materials and more.</p>
+                    <a href="/services.html" class="btn btn-outline">LEARN MORE</a>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 300ms;">
+                    <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+                    <h3>COMMERCIAL CLEANOUTS</h3>
+                    <p>Junk removal and cleanout services for businesses, offices, warehouses, rental properties and other commercial locations.</p>
+                    <a href="/services.html" class="btn btn-outline">LEARN MORE</a>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 400ms;">
+                    <div class="service-icon"><i class="fa-solid fa-house"></i></div>
+                    <h3>RESIDENTIAL CLEANOUTS</h3>
+                    <p>Clearing garages, backyards, entire homes and other residential spaces.</p>
+                    <a href="/services.html" class="btn btn-outline">LEARN MORE</a>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 500ms;">
+                    <div class="service-icon"><i class="fa-solid fa-file-contract"></i></div>
+                    <h3>CONTRACT WORK</h3>
+                    <p>Dependable hauling and debris removal for contractors, property managers, landlords and businesses.</p>
+                    <a href="/services.html" class="btn btn-outline">LEARN MORE</a>
+                </div>
+            </div>
+            
+            <div class="view-all-box reveal">
+                <h3>Looking For Our Full List of Capabilities?</h3>
+                <p>We handle all types of junk and debris removal projects.</p>
+                <a href="/services.html" class="btn btn-primary">VIEW ALL SERVICES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-heading text-center">WHY CHOOSE US</h2>
+                <div class="gold-accent-line center-line"></div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>PROFESSIONAL SERVICE</h3>
+                    <p>Clean, respectful and dependable service.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 100ms;">
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>FAST RESPONSE</h3>
+                    <p>We make it easy to get your junk removal needs handled.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 200ms;">
+                    <div class="feature-icon"><i class="fa-solid fa-spa"></i></div>
+                    <h3>STRESS-FREE EXPERIENCE</h3>
+                    <p>Simple communication and straightforward service.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 300ms;">
+                    <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>CUSTOMER FOCUSED</h3>
+                    <p>Our clients are at the heart of Smart Dump Services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section-padding dark-bg">
+        <div class="container text-center">
+            <div class="section-header reveal">
+                <h2 class="section-heading text-center">HOW IT WORKS</h2>
+                <div class="gold-accent-line center-line"></div>
+            </div>
+
+            <div class="steps-container">
+                <div class="step reveal">
+                    <div class="step-header">
+                        <div class="step-circle">01</div>
+                        <h3>CONTACT US</h3>
+                    </div>
+                    <p>Call or text and tell us what needs to be removed. You can also send photos.</p>
+                </div>
+                <div class="step reveal" style="transition-delay: 150ms;">
+                    <div class="step-header">
+                        <div class="step-circle">02</div>
+                        <h3>GET A FREE QUOTE</h3>
+                    </div>
+                    <p>We review the job and provide a free, no-obligation estimate.</p>
+                </div>
+                <div class="step reveal" style="transition-delay: 300ms;">
+                    <div class="step-header">
+                        <div class="step-circle">03</div>
+                        <h3>SCHEDULE YOUR PICKUP</h3>
+                    </div>
+                    <p>Choose a day and time that works best for you.</p>
+                </div>
+                <div class="step reveal" style="transition-delay: 450ms;">
+                    <div class="step-header">
+                        <div class="step-circle">04</div>
+                        <h3>WE HAUL IT AWAY</h3>
+                    </div>
+                    <p>We arrive, load everything, clean up the area and haul it away.</p>
+                </div>
+            </div>
+            
+            <a href="contact.html" class="btn btn-primary mt-4 reveal">GET A FREE QUOTE</a>
+        </div>
+    </section>
+
+    <!-- SERVICE AREAS PREVIEW -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-heading text-center">AREAS WE SERVE</h2>
+                <div class="gold-accent-line center-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-area-card reveal">
+                    <h3>SOUTH BAY</h3>
+                    <p>Chula Vista, National City, Imperial Beach, San Ysidro, Otay Mesa, Bonita, Coronado</p>
+                </div>
+                <div class="service-area-card reveal" style="transition-delay: 150ms;">
+                    <h3>SAN DIEGO</h3>
+                    <p>Downtown, Mission Valley, Point Loma, Ocean Beach, Pacific Beach, Clairemont, Kearny Mesa, Miramar, Tierrasanta</p>
+                </div>
+                <div class="service-area-card reveal" style="transition-delay: 300ms;">
+                    <h3>EAST COUNTY</h3>
+                    <p>La Mesa, Lemon Grove, Spring Valley, El Cajon, Santee, Rancho San Diego</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4 reveal">
+                <a href="/service-areas.html" class="btn btn-outline">VIEW ALL SERVICE AREAS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS / MESSAGE -->
+    <section class="section-padding dark-bg">
+        <div class="container text-center reveal">
+            <h2 class="section-heading text-center">WE'RE JUST GETTING STARTED</h2>
+            <div class="gold-accent-line center-line"></div>
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem auto; font-style: italic;">"Smart Dump Services is a new local business focused on building lasting relationships with every customer we serve."</p>
+            <a href="contact.html" class="btn btn-primary">READY TO GET STARTED?</a>
+        </div>
+    </section>
+
+    <!-- SAME-DAY / EMERGENCY -->
+    <section id="same-day">
+        <div class="container reveal">
+            <h2>NEED IT GONE TODAY?</h2>
+            <p>Same-day or emergency junk removal may be available depending on our schedule.</p>
+            <a href="contact.html" class="btn" style="background-color: var(--black); color: var(--gold);">CHECK AVAILABILITY</a>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="final-cta" class="section-padding">
+        <div class="container text-center reveal">
+            <h2>READY TO CLEAR THE CLUTTER?</h2>
+            <p>"Get in touch with Smart Dump Services for a free, no-obligation quote."</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">GET A FREE QUOTE</a>
+                <a href="tel:+16199329981" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> CALL US</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <img src="logo.png" alt="Smart Dump Services Logo" class="footer-logo" onerror="this.src='https://placehold.co/200x60/161616/D4A72C?text=SMART+DUMP+SERVICES'">
+                <p class="footer-desc">Professional junk removal services for residential, commercial, furniture, construction debris and more.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>CONTACT</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:+16199329981"><i class="fa-solid fa-phone"></i> (619) 932-9981</a></li>
+                    <li><a href="mailto:smartdumpserv@gmail.com"><i class="fa-solid fa-envelope"></i> smartdumpserv@gmail.com</a></li>
+                    <li><a href="https://wa.me/16199329981" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Chat With Us</a></li>
+                    <li><p style="margin-top: 10px; color: var(--light-gray); font-size: 0.95rem;">Mon - Sun, 7 AM - 9 PM</p></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>COMPANY</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" style="color: var(--gold);">Get a Free Quote</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>SERVICES</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Junk Removal</a></li>
+                    <li><a href="services.html">Furniture Removal</a></li>
+                    <li><a href="services.html">Construction Debris</a></li>
+                    <li><a href="services.html">Commercial Cleanouts</a></li>
+                    <li><a href="services.html">Residential Cleanouts</a></li>
+                    <li><a href="services.html">Contract Work</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; <span id="year">2026</span> Smart Dump Services. All Rights Reserved.</p>
+                <!-- NEW ADDITION: DEVELOPER CREDIT & NUMBER -->
+                <p style="margin-top: 10px; font-size: 0.85rem; color: var(--light-gray);">Developed by Princepal Singh | <a href="tel:+918360187994" style="color: var(--gold);">+918360187994</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS (DESKTOP) -->
+    <div class="floating-buttons desktop-only">
+        <a href="tel:+16199329981" class="float-btn float-call" aria-label="Call Smart Dump Services" title="Call Us">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://wa.me/16199329981?text=Hi%20Smart%20Dump%20Services%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener noreferrer" class="float-btn float-wa" aria-label="WhatsApp Smart Dump Services" title="WhatsApp Us">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- MOBILE BOTTOM ACTION BAR -->
+    <div class="mobile-bottom-bar mobile-only">
+        <a href="tel:+16199329981" class="mobile-action-btn">
+            <i class="fa-solid fa-phone"></i>
+            <span>CALL</span>
+        </a>
+        <a href="https://wa.me/16199329981" target="_blank" rel="noopener noreferrer" class="mobile-action-btn wa-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WHATSAPP</span>
+        </a>
+        <a href="contact.html" class="mobile-action-btn quote-btn">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+            <span>GET QUOTE</span>
+        </a>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Smart Dump Services",
+      "image": "assets/logo.png",
+      "url": "/",
+      "telephone": "+16199329981",
+      "email": "smartdumpserv@gmail.com",
+      "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 07:00-21:00"
+    }
+    </script>
+
+    <!-- ==========================================
+         JAVASCRIPT
+         ========================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            /* --- 1. PRELOADER --- */
+            const preloader = document.getElementById('preloader');
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    preloader.style.opacity = '0';
+                    setTimeout(() => {
+                        preloader.style.display = 'none';
+                    }, 500);
+                }, 500); 
+            });
+
+            /* --- 2. NAVBAR SCROLL EFFECT --- */
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            /* --- 3. MOBILE MENU TOGGLE --- */
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+            function toggleMenu() {
+                hamburger.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+                hamburger.setAttribute('aria-expanded', !isExpanded);
+            }
+
+            hamburger.addEventListener('click', toggleMenu);
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenu.classList.contains('active')) {
+                        toggleMenu();
+                    }
+                });
+            });
+
+            /* --- 4. SCROLL REVEAL ANIMATIONS --- */
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); 
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => {
+                revealOnScroll.observe(el);
+            });
+
+            /* --- 5. BACK TO TOP BUTTON --- */
+            const backToTopBtn = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            /* --- 6. FOOTER YEAR UPDATE --- */
+            const yearSpan = document.getElementById('year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+
+        });
+    </script>
+</body>
+</html>
